@@ -13,7 +13,7 @@ export default function Home() {
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-20 lg:px-12">
         <header className="flex flex-col items-start gap-8">
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground shadow-sm">
-            Modern Sales Suite
+            Modern Sales Suite updated with AI insights
           </span>
 
           <div className="flex flex-col gap-6">
