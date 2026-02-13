@@ -22,18 +22,18 @@ export function AuthShell({ title, subtitle, children, footer }: AuthShellProps)
         <section className="flex-1">
           <Link
             href={ROUTES.HOME}
-            className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground transition hover:text-foreground"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-gray-600 transition hover:text-gray-900"
           >
             {"<- Back to home"}
           </Link>
-          <h1 className="mt-6 text-4xl font-semibold text-foreground sm:text-5xl">
+          <h1 className="mt-6 text-4xl font-semibold text-gray-900 sm:text-5xl">
             {title}
           </h1>
-          <p className="mt-4 max-w-lg text-lg text-muted-foreground">
+          <p className="mt-4 max-w-lg text-lg text-gray-600">
             {subtitle}
           </p>
-          <div className="mt-10 hidden rounded-3xl border border-border bg-white/70 p-6 text-sm text-muted-foreground shadow-sm lg:block">
-            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground">
+          <div className="mt-10 hidden rounded-3xl border border-gray-200 bg-white/70 p-6 text-sm text-gray-600 shadow-sm lg:block">
+            <div className="text-xs font-semibold uppercase tracking-[0.2em] text-gray-600">
               Why teams choose us
             </div>
             <ul className="mt-4 space-y-3">
@@ -44,7 +44,7 @@ export function AuthShell({ title, subtitle, children, footer }: AuthShellProps)
           </div>
         </section>
 
-        <section className="w-full max-w-lg rounded-3xl border border-border bg-white/90 p-8 shadow-xl shadow-black/5">
+        <section className="w-full max-w-lg rounded-3xl border border-gray-200 bg-white/90 p-8 shadow-xl shadow-black/5">
           {children}
           {footer ? <div className="mt-6">{footer}</div> : null}
         </section>

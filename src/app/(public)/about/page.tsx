@@ -30,39 +30,39 @@ export default function AboutPage() {
         ].map((item) => (
           <div
             key={item.title}
-            className="rounded-3xl border border-border bg-white/90 p-6 shadow-sm"
+            className="rounded-3xl border border-gray-200 bg-white/90 p-6 shadow-sm"
           >
-            <h2 className="text-xl font-semibold text-foreground">{item.title}</h2>
-            <p className="mt-3 text-sm text-muted-foreground">{item.copy}</p>
+            <h2 className="text-xl font-semibold text-gray-900">{item.title}</h2>
+            <p className="mt-3 text-sm text-gray-600">{item.copy}</p>
           </div>
         ))}
       </section>
 
-      <section className="grid gap-6 rounded-3xl border border-border bg-white/80 p-8 shadow-sm lg:grid-cols-3">
+      <section className="grid gap-6 rounded-3xl border border-gray-200 bg-white/80 p-8 shadow-sm lg:grid-cols-3">
         {[
           { value: "10+", label: "industry templates ready on day one" },
           { value: "40%", label: "less time spent on manual reporting" },
           { value: "5min", label: "average setup time for new teams" },
         ].map((stat) => (
           <div key={stat.value} className="flex flex-col gap-2">
-            <span className="text-3xl font-semibold text-foreground">
+            <span className="text-3xl font-semibold text-gray-900">
               {stat.value}
             </span>
-            <span className="text-sm text-muted-foreground">{stat.label}</span>
+            <span className="text-sm text-gray-600">{stat.label}</span>
           </div>
         ))}
       </section>
 
-      <section className="flex flex-col items-start gap-4 rounded-3xl border border-border bg-white/90 p-6 shadow-sm">
-        <h3 className="text-xl font-semibold text-foreground">
+      <section className="flex flex-col items-start gap-4 rounded-3xl border border-gray-200 bg-white/90 p-6 shadow-sm">
+        <h3 className="text-xl font-semibold text-gray-900">
           Ready to see the system in action?
         </h3>
-        <p className="text-sm text-muted-foreground">
+        <p className="text-sm text-gray-600">
           Walk through a curated demo or speak with our team about your goals.
         </p>
         <Link
           href={ROUTES.CONTACT}
-          className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-background transition hover:-translate-y-0.5 hover:shadow-lg"
+          className="rounded-full bg-gray-900 px-5 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
         >
           Contact sales
         </Link>

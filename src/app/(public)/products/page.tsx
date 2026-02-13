@@ -38,25 +38,25 @@ export default function ProductsPage() {
         ].map((item) => (
           <div
             key={item.title}
-            className="rounded-3xl border border-border bg-white/90 p-6 shadow-sm"
+            className="rounded-3xl border border-gray-200 bg-white/90 p-6 shadow-sm"
           >
-            <h2 className="text-lg font-semibold text-foreground">{item.title}</h2>
-            <p className="mt-3 text-sm text-muted-foreground">{item.copy}</p>
+            <h2 className="text-lg font-semibold text-gray-900">{item.title}</h2>
+            <p className="mt-3 text-sm text-gray-600">{item.copy}</p>
           </div>
         ))}
       </section>
 
-      <section className="grid gap-6 rounded-3xl border border-border bg-white/80 p-8 shadow-sm lg:grid-cols-2">
+      <section className="grid gap-6 rounded-3xl border border-gray-200 bg-white/80 p-8 shadow-sm lg:grid-cols-2">
         <div>
-          <h3 className="text-xl font-semibold text-foreground">
+          <h3 className="text-xl font-semibold text-gray-900">
             Built for every stage of growth
           </h3>
-          <p className="mt-3 text-sm text-muted-foreground">
+          <p className="mt-3 text-sm text-gray-600">
             From new revenue teams to global organizations, configure workflows
             without losing visibility or speed.
           </p>
         </div>
-        <div className="grid gap-4 text-sm text-muted-foreground">
+        <div className="grid gap-4 text-sm text-gray-600">
           <span>Unified customer timeline</span>
           <span>Realtime alerts and approvals</span>
           <span>Role-based access built in</span>
@@ -64,18 +64,18 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <section className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-border bg-white/90 p-6 shadow-sm">
+      <section className="flex flex-wrap items-center justify-between gap-4 rounded-3xl border border-gray-200 bg-white/90 p-6 shadow-sm">
         <div>
-          <h4 className="text-lg font-semibold text-foreground">
+          <h4 className="text-lg font-semibold text-gray-900">
             See the platform in action
           </h4>
-          <p className="text-sm text-muted-foreground">
+          <p className="text-sm text-gray-600">
             Book a personalized walkthrough for your team.
           </p>
         </div>
         <Link
           href={ROUTES.CONTACT}
-          className="rounded-full bg-foreground px-5 py-2 text-sm font-semibold text-background transition hover:-translate-y-0.5 hover:shadow-lg"
+          className="rounded-full bg-gray-900 px-5 py-2 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:shadow-lg"
         >
           Schedule a demo
         </Link>

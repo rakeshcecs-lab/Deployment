@@ -23,13 +23,13 @@ export function PublicPageShell({
 
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col gap-12 px-6 py-16 lg:px-12">
         <header className="flex flex-col gap-4">
-          <span className="inline-flex w-fit items-center rounded-full border border-border bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground shadow-sm">
+          <span className="inline-flex w-fit items-center rounded-full border border-gray-200 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-gray-600 shadow-sm">
             {eyebrow}
           </span>
-          <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-foreground sm:text-5xl">
+          <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-gray-900 sm:text-5xl">
             {title}
           </h1>
-          <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
+          <p className="max-w-2xl text-lg text-gray-600 sm:text-xl">
             {subtitle}
           </p>
         </header>

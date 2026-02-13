@@ -12,15 +12,15 @@ export default function Home() {
 
       <div className="relative mx-auto flex min-h-screen max-w-6xl flex-col gap-16 px-6 py-20 lg:px-12">
         <header className="flex flex-col items-start gap-8">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-muted-foreground shadow-sm">
+          <span className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-4 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-gray-600 shadow-sm">
             Modern Sales Suite updated with AI insights today
           </span>
 
           <div className="flex flex-col gap-6">
-            <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-foreground sm:text-5xl lg:text-6xl">
+            <h1 className="max-w-2xl text-4xl font-semibold leading-tight text-gray-900 sm:text-5xl lg:text-6xl">
               Sales Management System that feels calm, fast, and delightful.
             </h1>
-            <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
+            <p className="max-w-2xl text-lg text-gray-600 sm:text-xl">
               Organize leads, unify teams, and track revenue with a clean
               dashboard, realtime notifications, and role-based access you can
               trust.
@@ -30,14 +30,14 @@ export default function Home() {
           <div className="flex flex-wrap gap-4">
             <Link
               href={ROUTES.LOGIN}
-              className="inline-flex items-center gap-2 rounded-full bg-foreground px-6 py-3 text-sm font-semibold text-background shadow-lg shadow-black/10 transition hover:-translate-y-0.5 hover:shadow-xl"
+              className="inline-flex items-center gap-2 rounded-full bg-gray-900 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-black/10 transition hover:-translate-y-0.5 hover:shadow-xl"
             >
               Sign in
               <span className="text-xs">-&gt;</span>
             </Link>
             <Link
               href={ROUTES.REGISTER}
-              className="inline-flex items-center gap-2 rounded-full border border-border bg-white/80 px-6 py-3 text-sm font-semibold text-foreground shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
+              className="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-6 py-3 text-sm font-semibold text-gray-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-white"
             >
               Create account
               <span className="text-xs">-&gt;</span>
@@ -69,32 +69,32 @@ export default function Home() {
             <Link
               key={card.title}
               href={card.href}
-              className="group relative flex h-full flex-col gap-6 rounded-3xl border border-border bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
+              className="group relative flex h-full flex-col gap-6 rounded-3xl border border-gray-200 bg-white/90 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="flex items-center justify-between">
-                <span className="rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-secondary-foreground">
+                <span className="rounded-full bg-gray-100 px-3 py-1 text-xs font-semibold text-gray-700">
                   {card.meta}
                 </span>
-                <span className="text-sm font-semibold text-muted-foreground transition group-hover:text-foreground">
+                <span className="text-sm font-semibold text-gray-600 transition group-hover:text-gray-900">
                   Explore -&gt;
                 </span>
               </div>
               <div className="flex flex-col gap-2">
-                <h2 className="text-2xl font-semibold text-foreground">
+                <h2 className="text-2xl font-semibold text-gray-900">
                   {card.title}
                 </h2>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-gray-600">
                   {card.description}
                 </p>
               </div>
-              <div className="mt-auto rounded-2xl bg-accent/60 px-4 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-accent-foreground">
+              <div className="mt-auto rounded-2xl bg-blue-50 px-4 py-3 text-xs font-semibold uppercase tracking-[0.2em] text-blue-700">
                 Always in sync
               </div>
             </Link>
           ))}
         </section>
 
-        <section className="grid gap-6 rounded-3xl border border-border bg-white/80 p-8 shadow-sm lg:grid-cols-3">
+        <section className="grid gap-6 rounded-3xl border border-gray-200 bg-white/80 p-8 shadow-sm lg:grid-cols-3">
           {[
             {
               value: "98%",
@@ -110,10 +110,10 @@ export default function Home() {
             },
           ].map((stat) => (
             <div key={stat.value} className="flex flex-col gap-2">
-              <span className="text-3xl font-semibold text-foreground">
+              <span className="text-3xl font-semibold text-gray-900">
                 {stat.value}
               </span>
-              <span className="text-sm text-muted-foreground">{stat.label}</span>
+              <span className="text-sm text-gray-600">{stat.label}</span>
             </div>
           ))}
         </section>

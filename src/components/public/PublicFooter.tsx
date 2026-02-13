@@ -41,28 +41,28 @@ const footerColumns = [
 
 export function PublicFooter() {
   return (
-    <footer className="border-t border-border bg-white/80">
+    <footer className="border-t border-gray-200 bg-white/80">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-12 lg:grid-cols-5 lg:px-12">
         <div className="lg:col-span-2">
-          <div className="text-lg font-semibold text-foreground">
+          <div className="text-lg font-semibold text-gray-900">
             {siteConfig.name}
           </div>
-          <p className="mt-3 max-w-sm text-sm text-muted-foreground">
+          <p className="mt-3 max-w-sm text-sm text-gray-600">
             {siteConfig.description}
           </p>
-          <div className="mt-4 text-sm text-muted-foreground">
+          <div className="mt-4 text-sm text-gray-600">
             Built for revenue teams that want clarity, consistency, and calm.
           </div>
         </div>
 
         {footerColumns.map((column) => (
           <div key={column.title} className="flex flex-col gap-3 text-sm">
-            <span className="font-semibold text-foreground">{column.title}</span>
+            <span className="font-semibold text-gray-900">{column.title}</span>
             {column.links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-muted-foreground transition hover:text-foreground"
+                className="text-gray-600 transition hover:text-gray-900"
               >
                 {link.label}
               </Link>
@@ -70,8 +70,8 @@ export function PublicFooter() {
           </div>
         ))}
       </div>
-      <div className="border-t border-border">
-        <div className="mx-auto flex max-w-6xl flex-col items-start gap-2 px-6 py-6 text-xs text-muted-foreground lg:flex-row lg:items-center lg:justify-between lg:px-12">
+      <div className="border-t border-gray-200">
+        <div className="mx-auto flex max-w-6xl flex-col items-start gap-2 px-6 py-6 text-xs text-gray-600 lg:flex-row lg:items-center lg:justify-between lg:px-12">
           <span>© 2026 {siteConfig.author}. All rights reserved.</span>
           <span>Sales operations, analytics, and CRM in one calm workspace.</span>
         </div>
